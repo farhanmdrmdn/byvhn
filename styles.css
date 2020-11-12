@@ -42,12 +42,6 @@ nav {
   display: block;
   }
 
-body, html {
-  font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
-  background: #abd4aa;
-  overscroll-behavior: none;
-  overflow-x: scroll;
-  }
     
 .navbar { 
   text-align: center; 
@@ -133,7 +127,7 @@ h3 {
   }
     
 p {
-  font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: 
   font-size: 15px;
   text-align: center;
   }
