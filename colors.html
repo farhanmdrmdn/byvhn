@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+​
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        background: black;
+      }
+​
+      #background {
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background"></div>
+    <button>Copy</button>
+    <button onclick="changeColour()">Change Colour</button>
+​
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+    <script>
+      array = [
+        "#E75926",
+        "#C82647",
+        "#1DABB8",
+        "#60646D",
+        "#AAB69B",
+        "#897FBA",
+        "#2C82C9",
+        "#2CC990",
+        "#3E4651",
+        "#F1654C",
+        "#E3C39D",
+      ];
+​
+      function changeColour() {
+        var max = 11;
+        var num = Math.floor(Math.random() * Math.floor(max));
+        document.body.style = "background:" + array[num];
+        document.getElementById("background").innerHTML =
+          "<h1>" + array[num] + "</h1>";
+        document.getElementById("background").innerText = array[num];
+        
+      }
+​
+      window.onload = changeColour();
+    </script>
+  </body>
+</html>
